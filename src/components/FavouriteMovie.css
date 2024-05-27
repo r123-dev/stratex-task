@@ -68,3 +68,18 @@
     flex: 1 1 100%;
   }
 }
+.favorite-list-container {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 20px;
+}
+
+.favorite-list {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}

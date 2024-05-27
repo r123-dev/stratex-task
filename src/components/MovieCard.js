@@ -1,31 +1,4 @@
-// import React from 'react';
-// import { useDispatch, useSelector } from 'react-redux';
-// import { toggleFavorite } from '../redux/movieSlice';
 
-// const MovieCard = ({ movie }) => {
-//   const dispatch = useDispatch();
-//   const favorites = useSelector((state) => state.movies.favorites);
-
-//   const isFavorite = favorites.some(fav => fav.id === movie.id);
-
-//   const handleFavoriteClick = () => {
-//     dispatch(toggleFavorite(movie));
-//   };
-
-//   return (
-//     <div className="movie-card">
-//       <img src={movie.image} alt={movie.movie} />
-//       <h3>{movie.movie}</h3>
-//       <p>Rating: {movie.rating}</p>
-//       <a href={movie.imdb_url} target="_blank" rel="noopener noreferrer">IMDb</a>
-//       <button onClick={handleFavoriteClick}>
-//         {isFavorite ? 'Unfavorite' : 'Favorite'}
-//       </button>
-//     </div>
-//   );
-// };
-
-// export default MovieCard;
 
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
