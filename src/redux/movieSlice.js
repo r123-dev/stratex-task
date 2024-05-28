@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-
+// require('dotenv').config({path: '.../.env'})
 const initialState = {
   movies: [],
   favoriteMovies: [],
@@ -29,7 +29,7 @@ export const { setMovies, toggleFavorite } = movieSlice.actions;
 // Add fetchMovies action creator
 export const fetchMovies = () => async (dispatch) => {
   try {
-    const response = await fetch('https://dummyapi.online/api/movies');
+    const response = await fetch(`https://dummyapi.online/api/movies`);
     const data = await response.json();
     dispatch(setMovies(data));
   } catch (error) {
